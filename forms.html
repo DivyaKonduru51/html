@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>HTML FORMS</h1>
+    <form action="" method="get">
+        <label for="name">Name*: </label>
+        <input id="name" type="text" name="name" placeholder="Enter your name" required maxlength="20"><br><br>
+        <label for="email">Email*: </label>
+        <input id="email" type="email" name="email" placeholder="Enter mail-id"required ><br><br>
+        <label for="password">Password*: </label>
+        <input id="password" type="password" name="password" placeholder="enter password" required><br><br>
+        <label for="phno">Phone Number:</label>
+        <input id="phno" type="number" name="phno" placeholder="enter phone number"><br><br>
+        <label for="dob">Date of Birth:</label>
+        <input id="dob"  type="date" name="dob" ><br><br>
+        <label for="sign">Signnature:</label>
+        <input id="sign" type="file" name="sign" ><br><br>
+        <fieldset>
+            <legend>choose wisely</legend>
+            ENTER GENDER: <br>
+            <input id="male" type="radio" name="gender" value="male">
+            <label for="male">Male</label> 
+            <input id="female" type="radio" name="gender" value="female" checked>
+            <label for="female">Female</label>
+            <hr>
+            UI module includes: <br>
+            <input id="html" type="checkbox" name="html" value="html" checked>
+            <label for="html">html</label>
+            <input id="css" type="checkbox" name="css" value="css" >
+            <label for="css">css</label>
+            <input id="js" type="checkbox" name="js" value="js" >
+            <label for="js">js</label>
+            <hr>
+            select which state you are from: <br>
+            <select name="states" id="">
+                <option value="select state">Select state</option>
+                <option value="ap">AP</option>
+                <option value="tn">TN</option>
+                <option value="mp">MP</option>
+                <option value="up">UP</option>
+                <option value="tg">TG</option>
+            </select>
+            <br>
+            select your interests(can choose multiple): <br>
+            <select name="vehicles" id="" multiple>
+                <optgroup label="cars">
+                    <option value="bmw">BMW</option>
+                    <option value="audi">AUDI</option>
+                </optgroup>
+                <optgroup label="bikes">
+                    <option value="re">ROYAL ENFIELD</option>
+                    <option value="pl">PULSAR</option>"
+                </optgroup>
+                <optgroup label="others">
+                    <option value="cy">CYCLE</option>
+                    <option value="bl">BULLOCKCART</option>
+                </optgroup>
+            </select>
+            <hr>
+            <label for="ta">Feedback: </label><br>
+            <textarea name="feedback" id="ta" cols="30" rows="10" placeholder="Type your feedback here:"></textarea>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <input type="reset" value="Clear Form">
+    </form>
+</body>
+</html>
+
