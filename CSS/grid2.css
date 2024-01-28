@@ -1,0 +1,56 @@
+*
+{
+    box-sizing: border-box;
+}
+#outer
+{
+    border: 3px solid black;
+    box-shadow: 5px 5px black;
+    margin: 50px;
+}
+.inner
+{
+    height: 100px;
+    width: 100px;
+}
+.i1
+{
+    background-color: blue;
+    position: sticky;
+    top:200px;
+    left:500px;
+}
+.i2
+{
+    background-color: red;
+}
+.i3
+{
+    background-color: green;
+}
+.i4
+{
+    background-color: brown;
+}
+/*********************************************************/
+.i2:hover
+{
+    background-color: orange;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+.i2
+{
+    transition: 3s all ease 5s;
+    /* transition-duration: 3s;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-delay:5s; */
+}
+/*
+        ease---constant speed
+        ease-in----initial slow then fast
+        ease-out----initial fast then slow
+        ease-in-out----slow flast slow fast
+*/

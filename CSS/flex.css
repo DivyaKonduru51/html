@@ -1,0 +1,36 @@
+*
+{
+    box-sizing: border-box;
+}
+#outer
+{
+    height: 200px;
+    width: 800px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px black;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+}
+.inner
+{
+    height: 50px;
+    width: 50px;
+    border: 1px solid green;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+.five
+{
+    align-self:flex-end;
+    flex-grow: 3;
+}
+.two
+{
+    flex-basis: content;
+    background-color: tomato;
+}

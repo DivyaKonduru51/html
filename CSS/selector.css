@@ -1,0 +1,83 @@
+/*.para
+{
+    background-color: rebeccapurple;
+}
+#para1
+{
+    background-color: green;
+}
+/* 
+inner p-----descendent
+inner+p-----sibling
+inner>p---- immediate child
+inner~p---- have common ancestors 
+*/
+/*pseudo sselectors(:)*/
+/* pseudo classes(::) */
+p::first-letter /*first-line*/
+{
+    font-size: 50px;
+    color: black;
+}
+#para1::before /*after*/
+{
+    content: "hello"; 
+    /* content added using css(we cannot selected it in website)*/
+}
+/* pseudo selectors */
+button
+{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    color: white;
+}
+button:hover
+{
+    background-color: antiquewhite;
+    color: black;
+}
+a:active
+{
+    background-color: green;
+}
+a:visited
+{
+    background-color: orange;
+
+}
+.inp:focus
+{
+    border: 1px solid blueviolet;
+}
+.inner:nth-child(1)  /* 1 means first child*/
+{
+    background-color: red;
+}
+/* we can give 1 2.. or even or odd*/
+.inner:nth-last-child(7) /*counts from last ,7th child from the last*/
+{
+    background-color: green;
+}
+p:nth-of-type(2)
+{
+    background-color: blue;
+}
+p:nth-last-of-type(3)
+{
+    background-color: yellow;
+} 
+.inp:required
+{
+    background-color: brown;
+}
+input:optional
+{
+    background-color: aqua;
+}
+input:disabled
+{
+    background-color: tomato;
+}
+/*input:read-only,write-only*/
+

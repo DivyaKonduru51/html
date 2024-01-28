@@ -1,0 +1,39 @@
+*
+{
+    box-sizing: border-box;
+}
+.outer
+{
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px black;
+    margin: 40px;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-columns: repeat(3,100px); */
+    /*grid-template-rows: repeat(2,100px);  here for 2 rows a gap of 100px will appear */
+    /*grid-template-columns:1fr 2fr 1fr; //(3,1fr) here fr means fraction(1partof4)*/
+    /* row-gap:10px;
+    column-gap: 30px; */
+   /* gap:10px; /* apllied to both row and col*/
+}
+.inner
+{
+    border: 1px solid green;
+     /* margin: 10px;
+    padding: 10px;  */
+    /* height: 100px;
+    width: 100px; */
+}
+.i1
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.i2
+{
+    grid-column-start: 3;
+    grid-row-start:1;
+    grid-row-end: 5;
+}
